@@ -1,0 +1,5 @@
+local myNewImage = Image.create( 800, 600, "UINT8" )
+print( "Created size: " .. Image.toString( myNewImage ) .. ";" )
+--myNewImage = Image.resize( myNewImage, 640, 480 )
+myNewImage = myNewImage:resize( 640, 480 )
+print( "Adapted size: " .. myNewImage:toString() .. ";" )
